@@ -7,6 +7,8 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN npm run sonar
+
 COPY . .
 
 EXPOSE 3000
